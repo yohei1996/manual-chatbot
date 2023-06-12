@@ -20,7 +20,7 @@ template = """
 
 ### 制約
 - [theme:]について[reference text:]の内容をもとに書いてください
-- 1000文字以内の文章を書いてください。
+- 100文字以内の文章を書いてください。
 - 結果を[### output] セクションの <answer here> に出力してください。
 - [reference text:]の中から参考にしたものを[### output] セクションの <refarence sources here> に出力してください。
 
@@ -46,9 +46,8 @@ def chat(message, history=[]):
         )
         docs = retriever.get_relevant_documents(message)
         reference_text = ""
-        print(docs)
         for doc in docs:
-            if len(reference_text) > 1000: break
+            if len(reference_text) > 300: break
             reference_text += f'text:\n{doc.page_content}\nsource:\n{doc.metadata["source"]}\n\n'
         chain = LLMChain(llm=llm, prompt=prompt)
         response = chain.run({"question":message,"reference_text":reference_text})

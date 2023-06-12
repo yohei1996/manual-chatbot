@@ -15,7 +15,6 @@ import ast
 os.environ["CHROME_DRIVER_PATH"] = '/Users/nishitsujiyouhei/Documents/RPA/input_and_study/liny-manual-chatbot/chromedriver'
 import re
 import csv
-from library.file_management import save,read,add,add_row,is_contain,is_extst
 
 def _get_headline_and_text(html):
     pattern = re.compile(r'<(h[1-4]|p|table)[^>]*>(.*?)<\/\1>|<(img)[^>](.*?)\/>', re.DOTALL)
