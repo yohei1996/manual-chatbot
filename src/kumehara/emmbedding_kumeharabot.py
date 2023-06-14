@@ -23,7 +23,7 @@ def read(path):
     with open(path, "r") as file:
         return file.read()
     
-os.environ["OPENAI_API_KEY"] = "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"
+
     
 text_splitter = RecursiveCharacterTextSplitter(
 # Set a really small chunk size, just to show.

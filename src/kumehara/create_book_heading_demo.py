@@ -13,7 +13,7 @@ from langchain.vectorstores.faiss import FAISS
 from langchain.chat_models import ChatOpenAI
 import gradio as gr
 
-os.environ["OPENAI_API_KEY"] = "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"
+
 def save(text,path):
     with open(path, "w") as file:
         file.write(text)

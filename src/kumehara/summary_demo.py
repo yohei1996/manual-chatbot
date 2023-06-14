@@ -7,7 +7,7 @@ import gradio as gr
 import pickle
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+
 
 with open("../../storage/kumeharadocuments/vectorstore_kume__200_50.pkl", "rb") as f:
     vectorstore:FAISS = pickle.load(f)

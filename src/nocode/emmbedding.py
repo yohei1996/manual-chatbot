@@ -18,7 +18,6 @@ def read(path):
     with open(path, "r") as file:
         return file.read()
 
-os.environ["OPENAI_API_KEY"] = "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"
 os.environ["PROJECT_ROOT"] = '/Users/nishitsujiyouhei/Documents/RPA/input_and_study/liny-manual-chatbot'
 os.environ["CHROME_DRIVER_PATH"] = '/Users/nishitsujiyouhei/Documents/RPA/input_and_study/liny-manual-chatbot/chromedriver'
 os.chdir(os.getenv('PROJECT_ROOT'))
