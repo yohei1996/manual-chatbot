@@ -1,3 +1,5 @@
 chromedriver
-vectorstore.pkl
-除外段落.txt
+storage/kumeharadocuments/vectorstore.pkl
+storage/kumeharadocuments/除外段落.txt
+適用段落.txt
+kumeharadocuments/*.txt
